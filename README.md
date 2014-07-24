@@ -1,8 +1,13 @@
 # sinatra.js
 
-> Minimal Sinatra like router for your Web browser, just perfect for single page applications
+> Minimal Sinatra like router for your Web browser
 
-**sinatra.js is for web browsers only! If you’re looking for a minimal Sinatra like router for node.js, check out [fapprik](http://fapprik.com/)’s [Sinodetra](https://www.npmjs.org/package/sinodetra).**
+sinatra.js uses the fragment identifier (introduced by a hash mark) of an URL for routing, making it just perfect for single page applications. Whether you’re using plain hashes or hash bangs is irrelevant in doing so—the following two URLs are treated exactly the same.
+
+	http://example.com/#/about-us
+	http://example.com/#!/about-us
+
+**But: sinatra.js is for web browsers only! If you’re looking for a minimal Sinatra like router for node.js, check out [fapprik](http://fapprik.com/)’s [Sinodetra](https://www.npmjs.org/package/sinodetra).**
 
 ## Usage
 
