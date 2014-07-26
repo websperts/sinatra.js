@@ -1,11 +1,11 @@
 /*
-* sinatra.js
-* https://github.com/websperts/sinatra.js
-*
-* Copyright (c) 2014 websperts <hello@websperts.com>
-* Licensed under the MIT license.
-* https://github.com/websperts/sinatra.js/blob/master/LICENSE
-*/
+ * sinatra.js
+ * https://github.com/websperts/sinatra.js
+ *
+ * Copyright (c) 2014 websperts <hello@websperts.com>
+ * Licensed under the MIT license.
+ * https://github.com/websperts/sinatra.js/blob/master/LICENSE
+ */
 
 ;(function(root, factory) {
     if (typeof define === 'function' && define.amd) {
