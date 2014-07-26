@@ -7,11 +7,19 @@
 * https://github.com/websperts/sinatra.js/blob/master/LICENSE
 */
 
-;(function(window, undefined) {
+;(function(root, factory) {
+    if (typeof define === 'function' && define.amd) {
+        define(function() {
+            return factory(root);
+        });
+    } else {
+        root.sinatra = factory(root);
+    }
+})(this, function(root, undefined) {
 
     'use strict';
 
-    var sinatra = window.sinatra = {
+    var sinatra = {
 
         routes: {},
         errorCallback: null,
@@ -42,7 +50,7 @@
         },
 
         change: function() {
-            var matches = (window.location.hash || '#').match('^#\!?(.*)$');
+            var matches = (root.location.hash || '#').match('^#\!?(.*)$');
             if (matches) {
                 var request = matches[1] || '';
                 if (request.length === 0) {
@@ -73,18 +81,20 @@
         },
 
         run: function() {
-            if (!('onhashchange' in window)) {
-                window.setInterval(function() {
+            if (!('onhashchange' in root)) {
+                root.setInterval(function() {
                     sinatra.change();
                 }, 100);
-            } else if (window.addEventListener) {
-                window.addEventListener('hashchange', sinatra.change, false);
-            } else if (window.attachEvent) {
-                window.attachEvent('onhashchange', sinatra.change);
+            } else if (root.addEventListener) {
+                root.addEventListener('hashchange', sinatra.change, false);
+            } else if (root.attachEvent) {
+                root.attachEvent('onhashchange', sinatra.change);
             }
             sinatra.change();
         }
 
     };
 
-})(window);
+    return sinatra;
+
+});

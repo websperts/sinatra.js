@@ -57,6 +57,8 @@ Finally, you can initialize the routing after you added all your routes using `s
 
 ## Changelog
 
+* 0.0.2
+	* AMD support
 * 0.0.1
 	* Initial version
 
