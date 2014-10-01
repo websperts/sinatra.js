@@ -1,4 +1,5 @@
-/*
+/**
+ * @license
  * sinatra.js
  * https://github.com/websperts/sinatra.js
  *
@@ -56,7 +57,6 @@
                 if (request.length === 0) {
                     request = '/';
                 }
-                console.log(request);
                 for (var route in sinatra.routes) {
                     var matches = request.match('^' + route + '$');
                     if (matches) {
