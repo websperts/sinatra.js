@@ -9,6 +9,13 @@ sinatra.js uses the fragment identifier (introduced by a hash mark) of an URL fo
 
 **But: sinatra.js is for web browsers only! If you’re looking for a minimal Sinatra like router for node.js, check out [fapprik](http://fapprik.com/)’s [Sinodetra](https://www.npmjs.org/package/sinodetra).**
 
+## Download
+
+To get going with sinatra.js you can:
+
+- [Download the latest release](https://github.com/websperts/sinatra.js/archive/master.zip)
+- [Install with Bower](http://bower.io/): `bower install sinatra`
+
 ## Usage
 
 At first, embed `sinatra.min.js` within your Web application. `sinatra.min.js` is minified using [Google’s Closure Compiler](https://developers.google.com/closure/compiler/) and weighs < 1 kB bytes if gzipped.
@@ -57,6 +64,10 @@ Finally, you can initialize the routing after you added all your routes using `s
 
 ## Changelog
 
+* 0.0.4
+	* Bower support
+* 0.0.3
+	* Code cleanup
 * 0.0.2
 	* AMD support
 * 0.0.1
