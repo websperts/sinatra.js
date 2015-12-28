@@ -14,6 +14,7 @@ sinatra.js uses the fragment identifier (introduced by a hash mark) of an URL fo
 To get going with sinatra.js you can:
 
 - [Download the latest release](https://github.com/websperts/sinatra.js/archive/master.zip)
+- [Install with npm](https://www.npmjs.com/): `npm install sinatra`
 - [Install with Bower](http://bower.io/): `bower install sinatra`
 
 ## Usage
@@ -64,6 +65,8 @@ Finally, you can initialize the routing after you added all your routes using `s
 
 ## Changelog
 
+* 0.0.5
+	* npm support
 * 0.0.4
 	* Bower support
 * 0.0.3
@@ -80,7 +83,7 @@ Finally, you can initialize the routing after you added all your routes using `s
 
 ## License
 
-Copyright (c) 2014 [websperts](http://websperts.com/)  
+Copyright (c) 2015 [websperts](http://websperts.com/)  
 Licensed under the MIT license.
 
 See LICENSE for more info.
